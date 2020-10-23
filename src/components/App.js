@@ -1,4 +1,7 @@
 // import './App.css';
+import { Home } from './Home'
+import { About } from './About'
+import { Users } from './Users'
 import {Link, Route, Switch} from 'react-router-dom';
 
 function App() {
@@ -33,15 +36,3 @@ function App() {
 }
 
 export default App;
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
