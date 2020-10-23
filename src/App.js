@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 // import './App.css';
-import {  BrowserRouter as Router, Link } from 'react-router-dom';
+import {Link, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <div>
-          <h1>PLEASE LINK :D </h1>
+          <h1> PLEASE LINK :D </h1>
           <nav>
             <ul>
               <li>
@@ -23,6 +22,12 @@ function App() {
           </nav>
         </div>
       </header>
+
+      <Switch>
+        <Route path="/" exact> <Home/></Route>
+        <Route path="/about"> <About/></Route>
+        <Route path="/users"> <Users/></Route>
+      </Switch>
     </div>
   );
 }
